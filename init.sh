@@ -4,6 +4,8 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 sudo apt update
 sudo apt install build-essential -y
 apt install tmux -y
+apt-get install locales
+locale-gen en_US.UTF-8
 
 # install zsh
 conda init bash
