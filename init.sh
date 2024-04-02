@@ -36,3 +36,6 @@ cd ~/repos/moreh-datasets && git lfs install && make install
 
 # re-install moai
 update-moreh
+
+# remove cache
+rm -rf ~/.cache/pip
