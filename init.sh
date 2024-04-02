@@ -6,6 +6,7 @@ sudo apt install build-essential -y
 apt install tmux -y
 apt-get install locales
 locale-gen en_US.UTF-8
+echo "bind-key y set-window-option synchronize-panes"|& tee ~/.tmux.conf
 
 # install zsh
 conda init bash
