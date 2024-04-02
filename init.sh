@@ -37,10 +37,13 @@ mkdir repos&& cd repos
 git clone https://github.com/moreh-dev/large-models.git
 
 cd ~/repos/large-models && git lfs install && pip install -e .
-cd ./moreh-datasets && git lfs install && make install
 
 # re-install moai
 update-moreh
 
 # remove cache
 rm -rf ~/.cache/pip
+
+# TODO: MANUAL
+# set keys for some ssh
+# cd ./moreh-datasets && git lfs install && make install
