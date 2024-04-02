@@ -17,3 +17,14 @@ git config --global user.email "junhyeok.lee@moreh.io"
 git config --global user.name "junhyeok.lee"
 
 pip install -U -r $SCRIPT_DIR/requirements.txt
+
+cd ~/
+conda activate moreh
+mkdir repos&& cd repos
+git clone https://github.com/moreh-dev/large-models.git
+git clone https://github.com/moreh-dev/moreh-datasets.git
+
+cd ~/repos/large-models && git lfs install && pip install -e .
+cd ~/repos/moreh-datasets && git lfs install && make install
+
+update-moreh
