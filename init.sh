@@ -3,6 +3,7 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 # install packages
 sudo apt update
 sudo apt install build-essential -y
+apt-get install libgl1
 apt install tmux -y
 apt-get install locales
 locale-gen en_US.UTF-8
@@ -23,6 +24,8 @@ curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.s
 sudo apt-get install git-lfs
 git config --global user.email "junhyeok.lee@moreh.io"
 git config --global user.name "junhyeok.lee"
+eval $(ssh-agent)
+echo -e "\n\n\n" | ssh-keygen
 
 # install important python packages
 pip install -U -r $SCRIPT_DIR/requirements.txt
