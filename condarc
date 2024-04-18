@@ -1,0 +1,3 @@
+changeps1: false
+envs_dirs:
+  - /moai/cache/conda_envs/junhyeok
